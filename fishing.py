@@ -22,6 +22,17 @@ def  handle_message ( message ):
     a = ["карась", "окунь", "лящ", "ничего", "ничего", "сом", "ничего", "щука"]
     bot.reply_to(message,random.choice(a))
 
+@bot . message_handler ( commands=['allteg']) 
+def  handle_message ( message ): 
+    bot.reply_to(message,"ты точно хочешь вызвать всех? Command 'yes' or 'no'")
+    @bot . message_handler ( commands=['yes'])
+    def  handle_message ( message ): 
+         a = ["@NoI3y"+" @OlyaBlg"+" @volcha123"+" @grabelka"+" @Aleksan_Sergeevich"+" @M00nTiger"+" @Pollyy_k"+" @Yuli_lev"+" @Sahakuieru"+" @Dungeon_masterrr"+" @TheGreatest_One"+" @mrtimego"+" @VladoSik202"+" @Anya_233"+" @joly_yurii"+" @Innnnnn_a"+" @garnven"+" @like4nime"+" @danilium137"+" @kirilit0"+" @yablokooooo"+" @blessedqq"+" @Yaroslav2404"]
+         bot.reply_to(message,a)
+    @bot . message_handler ( commands=['no'])
+    def  handle_message ( message ): 
+        bot.reply_to(message,"Ну так и не лезь...")
+
 @bot . message_handler ( commands=['orel']) 
 def  handle_message ( message ):
     import random 
